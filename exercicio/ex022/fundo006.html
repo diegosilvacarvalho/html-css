@@ -4,22 +4,36 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+            /* Todas tags substituidas pelo Shorthand - background
+            height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed;
+            */
+             /*background-repeat: no-repeat;*/
             /*background-size: 100% 100%;*/
             /*background-size: auto;*/
             /*background-size: contain;*/
+            
+            
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            /*width: 400px;*/
+            /*max-width: 700px;*/
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,8 +44,12 @@
 <body>
     <main>
         <h1>Teste de Image de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptas quidem itaque blanditiis iste, porro molestiae voluptatibus natus dicta error officia vitae culpa rem repellendus, tempore aut explicabo consequuntur similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptas quidem itaque blanditiis iste, porro molestiae voluptatibus natus dicta error officia vitae culpa rem repellendus, tempore aut explicabo consequuntur similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat, dolorum et animi aliquam fuga non consectetur tempore mollitia maxime reprehenderit nulla facilis, ea quos possimus! Doloremque similique officiis recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio repellendus earum cumque aspernatur, beatae provident. Maiores, aut quo nihil consectetur quis asperiores voluptates possimus impedit eligendi optio inventore accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum minus aut voluptate iusto impedit. Magni possimus temporibus doloremque voluptates voluptatum nemo corrupti ipsum? Blanditiis distinctio molestias excepturi obcaecati? Quod?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique enim sequi itaque repellat. Mollitia magnam illo, sunt error repudiandae ipsum quis optio. Ducimus laudantium, a aut voluptatum tempore eligendi asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus nihil officiis tempora ipsam nobis, mollitia explicabo asperiores temporibus voluptatum consequatur magni saepe non error, pariatur in rerum? Enim, voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt, inventore reiciendis dolore eius neque doloremque quis! A atque tempore, maiores ullam aperiam quibusdam accusamus blanditiis ut? Placeat, molestiae hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat quisquam minima iure reiciendis tempora repellendus non inventore! Expedita quae corporis explicabo labore facilis repudiandae neque blanditiis fugiat quas a?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim error officia accusamus voluptates dolorem. Reiciendis eligendi ab eius blanditiis, odio voluptatem aliquid obcaecati expedita, cum voluptatibus voluptatum commodi quod veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit enim, architecto dolore ratione voluptatum, exercitationem sapiente dignissimos eligendi reprehenderit eveniet possimus adipisci. Laborum repudiandae quod, accusantium modi neque cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita quam esse iusto recusandae temporibus odio at optio quod adipisci! Beatae laboriosam aspernatur expedita minus, hic quo? Nulla, incidunt necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quo ex, voluptates molestiae impedit ducimus, atque ratione dignissimos similique perspiciatis, exercitationem quos dolores itaque numquam nesciunt! Repellat excepturi eos nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ullam dolor deserunt sit in et aperiam nobis suscipit, laborum consequuntur itaque ex iusto, eos reprehenderit repudiandae aliquid molestias est amet?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur delectus temporibus debitis quod reprehenderit sed iste? Sint delectus voluptates nihil placeat provident, laborum itaque obcaecati accusamus, consequatur exercitationem beatae eligendi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur tempora beatae totam. Dolor perferendis fuga facilis illo alias nemo, modi tempora iste excepturi labore delectus veniam qui dolorem at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quia sed repellendus quisquam asperiores quos officiis tempore neque. Pariatur expedita perspiciatis exercitationem aut amet enim reiciendis molestias corrupti animi incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat quos aliquid necessitatibus perspiciatis ratione sed et quia, consequatur sint accusamus laudantium cupiditate? Dolores laborum soluta temporibus ab necessitatibus reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero enim repudiandae dolor. Doloribus pariatur dolore id, provident dolorem explicabo at quos exercitationem delectus nesciunt, nemo, necessitatibus quod laboriosam unde incidunt!</p>
     </main>
+
   
 </body>
 </html>
