@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,29 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+      /*  tbody > tr:nth-child(odd){ <!-- 2n-1 -->
+            background-color: yellow;
+        } */
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -46,16 +67,17 @@
 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th escope="co">Estado</th>
+                <th scope="co" style="width: 50px"">População</th>
             </tr>
         </thead>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>84.352.783</strong></td>
             </tr>
         </tfoot>
@@ -75,6 +97,7 @@
             </tr>
         </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet accusantium praesentium voluptatum ex autem, voluptas at doloribus impedit placeat, odit unde architecto. Unde quia molestiae libero voluptatum natus esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati repellendus ut natus tempora, iure, commodi veritatis doloremque blanditiis fugiat magnam sapiente similique dolor optio deleniti recusandae non iste ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto expedita enim perferendis eos inventore quam quidem delectus doloremque iure cumque aperiam, provident, iste quibusdam vitae necessitatibus officiis quia nostrum ut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, voluptas! Esse eveniet hic tempore tempora officia consectetur, qui ducimus tenetur quisquam magnam doloremque beatae fuga! Praesentium iusto beatae repellat libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quos ab est neque soluta officiis porro fugiat quisquam laboriosam. Pariatur expedita dolore illum cupiditate animi sed doloremque enim sunt quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eos quia atque recusandae, facilis repudiandae fuga dolor distinctio commodi suscipit nesciunt minus in hic tenetur amet adipisci sapiente! Fugit, quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat molestiae esse corrupti ex sint quaerat. Asperiores, laborum. Assumenda cumque voluptates, blanditiis sequi vero culpa, ad fugiat ex, praesentium quia consequuntur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate voluptas soluta nihil dolorem repellendus ex atque eum? Esse dolorum repudiandae eum quod veniam nulla deserunt explicabo vero, cum, sed vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur harum adipisci dicta officia quisquam nobis dignissimos consectetur, placeat cumque quasi, animi suscipit iure minima similique porro natus. Accusantium, odio accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam earum libero adipisci deleniti voluptatem vitae recusandae iure. Soluta, dolorum. Eius laboriosam dolor sapiente nesciunt aliquid commodi incidunt. Error, recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid totam optio quis exercitationem, nobis modi in consequatur porro, minus, nemo dolore laudantium rem commodi. Inventore, ex! Facere sapiente sunt veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt dignissimos hic suscipit quod voluptas at tempora. Officiis, cum ipsa neque sit repellendus facilis nesciunt eligendi nobis tempora dignissimos modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellendus, odio soluta culpa iusto eos magnam possimus consequatur! In tenetur pariatur ab libero reprehenderit accusantium alias ullam autem est id?</p>
 
 
 </body>
